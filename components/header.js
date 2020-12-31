@@ -1,9 +1,9 @@
 import Link from "next/link";
 import FaceIcon from "@material-ui/icons/Face";
 import Button from "@material-ui/core/Button";
-import MusicNoteIcon from "@material-ui/icons/MusicNote";
+import StarIcon from "@material-ui/icons/Star";
 import RssFeedIcon from "@material-ui/icons/RssFeed";
-import SendIcon from "@material-ui/icons/Send";
+import NearMeIcon from "@material-ui/icons/NearMe";
 import Image from "next/image";
 import Container from "@material-ui/core/Container";
 
@@ -21,33 +21,34 @@ const Header = () => {
           <h1>Oda Kento</h1>
         </div>
         <ul>
-          <Button variant="contained" color="primary" className="button">
-            <FaceIcon />
-            <Link href="/blog">
+          <Link href="/">
+            <Button variant="contained" color="primary" className="button">
+              <FaceIcon />
               <a>profile</a>
-            </Link>
-          </Button>
+            </Button>
+          </Link>
 
-          <Button variant="contained" color="primary" className="button">
-            <RssFeedIcon />
-            <Link href="/about">
+          <Link href="/blog">
+            <Button variant="contained" color="primary" className="button">
+              <RssFeedIcon />
               <a>blog</a>
-            </Link>
-          </Button>
+            </Button>
+          </Link>
 
-          <Button variant="contained" color="primary" className="button">
-            <MusicNoteIcon />
-            <Link href="/about">
+          <Link href="/social">
+            <Button variant="contained" color="primary" className="button">
+              <StarIcon />
               <a>social</a>
-            </Link>
-          </Button>
+            </Button>
+          </Link>
 
-          <Button variant="contained" color="primary" className="button">
-            <SendIcon />
-            <Link href="/about">
+          <Link href="/message">
+            <Button variant="contained" color="primary" className="button">
+              <NearMeIcon />
+
               <a>message</a>
-            </Link>
-          </Button>
+            </Button>
+          </Link>
         </ul>
       </Container>
       <style>{`
