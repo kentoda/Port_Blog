@@ -10,8 +10,8 @@ import CardActionArea from "@material-ui/core/CardActionArea";
 import CardActions from "@material-ui/core/CardActions";
 import CardContent from "@material-ui/core/CardContent";
 import CardMedia from "@material-ui/core/CardMedia";
-import Button from "@material-ui/core/Button";
 import Typography from "@material-ui/core/Typography";
+import Image from "next/image";
 
 const useStyles = makeStyles({
   root: {
@@ -47,12 +47,17 @@ const Blog = ({ allPostsData }) => {
           <Link href={`/posts/${id}`} key={id}>
             <Card className={classes.root}>
               <CardActionArea>
-                <CardMedia
+                {/* <CardMedia
                   component="img"
                   alt="Contemplative Reptile"
                   height="140"
-                  // image="/static/images/cards/contemplative-reptile.jpg"
+                  image="../public/istockphoto-1160498031-612x612.jpg"
                   title="Contemplative Reptile"
+                /> */}
+                <Image
+                  src="/istockphoto-1160498031-612x612.jpg"
+                  width={500}
+                  height={300}
                 />
                 <CardContent>
                   <Typography gutterBottom variant="h5" component="h2">
