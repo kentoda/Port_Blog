@@ -1,10 +1,8 @@
-import Container from "@material-ui/core/Container";
-
-const Head = () => {
+const SubHead = () => {
   return (
-    <div class="heading">
+    <div className="heading">
       <h2>Profile</h2>
-      <p>駆け出しエンジニア兼冒険者</p>
+      <p>エンジニアっぽくないエンジニアになりたい</p>
 
       <style>{`
          .heading {
@@ -15,13 +13,6 @@ const Head = () => {
           color: #66757f;
           margin: 0 0 0 20px;
       }
-      p {
-        display: block;
-        margin-block-start: 1em;
-        margin-block-end: 1em;
-        margin-inline-start: 0px;
-        margin-inline-end: 0px;
-       }
 
       .heading h2 {
         border-right: 2px solid #333;
@@ -33,4 +24,4 @@ const Head = () => {
   );
 };
 
-export default Head;
+export default SubHead;
