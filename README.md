@@ -13,8 +13,10 @@
 * Next.js 10.0.3
 * react   17.0.1
 * ReactHooks
+
 ーstylesー
 * material-ui
+  
 ーinfrastructureー
 * vercel
 
