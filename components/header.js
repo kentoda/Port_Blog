@@ -5,55 +5,62 @@ import StarIcon from "@material-ui/icons/Star";
 import RssFeedIcon from "@material-ui/icons/RssFeed";
 import NearMeIcon from "@material-ui/icons/NearMe";
 import Image from "next/image";
-import Container from "@material-ui/core/Container";
 
 const Header = () => {
   return (
     <header>
-      <Container maxWidth="sm">
-        <div className="profile">
-          <Image
-            className="img"
-            src="/istockphoto-1160498031-612x612.jpg"
-            width={100}
-            height={100}
-          />
-          <h1>Oda Kento</h1>
-        </div>
-        <ul>
-          <Link href="/">
-            <Button variant="contained" color="primary" className="button">
-              <FaceIcon />
-              <a>profile</a>
-            </Button>
-          </Link>
+      <div className="profile">
+        <Image
+          className="img"
+          src="/istockphoto-1160498031-612x612.jpg"
+          width={100}
+          height={100}
+        />
+        <h1 className="name">Oda Kento</h1>
+      </div>
+      <ul className="nav">
+        <Link href="/">
+          <Button color="primary" className="button">
+            <FaceIcon />
+            <a>profile</a>
+          </Button>
+        </Link>
 
-          <Link href="/blog">
-            <Button variant="contained" color="primary" className="button">
-              <RssFeedIcon />
-              <a>blog</a>
-            </Button>
-          </Link>
+        <Link href="/blog">
+          <Button color="primary" className="button">
+            <RssFeedIcon />
+            <a>blog</a>
+          </Button>
+        </Link>
 
-          <Link href="/social">
-            <Button variant="contained" color="primary" className="button">
-              <StarIcon />
-              <a>social</a>
-            </Button>
-          </Link>
+        <Link href="/social">
+          <Button color="primary" className="button">
+            <StarIcon />
+            <a>social</a>
+          </Button>
+        </Link>
 
-          <Link href="/message">
-            <Button variant="contained" color="primary" className="button">
-              <NearMeIcon />
+        <Link href="/message">
+          <Button color="primary" className="button">
+            <NearMeIcon />
 
-              <a>message</a>
-            </Button>
-          </Link>
-        </ul>
-      </Container>
+            <a>message</a>
+          </Button>
+        </Link>
+      </ul>
+
       <style>{`
+       
         header .profile {
           text-align: center;
+          align-items: center;
+        
+        }
+    
+        .nav {
+          text-align: center;
+          align-items: center;
+          
         }
         .img {
           border-radius: 50%; 
