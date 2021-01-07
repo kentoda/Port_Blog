@@ -78,10 +78,7 @@ const Message = () => {
         message,
     };
 
-    const url =
-      "https://hooks.slack.com/services/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";
-
-    fetch(url, {
+    fetch(process.env.ICOMING_HOOK_URL, {
       method: "POST",
       body: JSON.stringify(payload),
     }).then(() => {
