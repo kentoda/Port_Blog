@@ -79,7 +79,7 @@ const Message = () => {
     };
 
     const url =
-      "https://hooks.slack.com/services/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";
+      "https://hooks.slack.com/services/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";
 
     fetch(url, {
       method: "POST",
