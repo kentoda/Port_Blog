@@ -78,7 +78,9 @@ const Message = () => {
         message,
     };
 
-    fetch(process.env.ICOMING_HOOK_URL, {
+    const url = process.env.NEXT_PUBLIC_ICOMING_HOOK_URL;
+
+    fetch(url, {
       method: "POST",
       body: JSON.stringify(payload),
     }).then(() => {
