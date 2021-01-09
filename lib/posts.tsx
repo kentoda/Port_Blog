@@ -21,10 +21,11 @@ export function getSortedPostsData() {
     // Use gray-matter to parse the post metadata section
     const matterResult = matter(fileContents);
 
-    // スプレッド構文でdata展開、idと組み合わせる
+    // スプレッド構文でdata(title)展開、idと組み合わせる
     return {
       id,
-      ...matterResult.data,
+      //方定義
+      ...(matterResult.data as { date: string; title: string }),
     };
   });
   // 日付をソートする
@@ -68,6 +69,6 @@ export async function getPostData(id) {
   return {
     id,
     contentHtml,
-    ...matterResult.data,
+    ...(matterResult.data as { date: string; title: string }),
   };
 }
