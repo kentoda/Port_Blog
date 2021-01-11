@@ -123,7 +123,6 @@ const Message = () => {
                   label="メッセージ(必須)"
                   type="text"
                   onChange={inputMessage}
-                  name="name"
                   name="message"
                   fullWidth
                   margin="normal"
