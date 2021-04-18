@@ -6,7 +6,6 @@ import InstagramIcon from "@material-ui/icons/Instagram";
 import FacebookIcon from "@material-ui/icons/Facebook";
 import { makeStyles } from "@material-ui/core/styles";
 import Paper from "@material-ui/core/Paper";
-import { red } from "@material-ui/core/colors";
 
 const useStyles = makeStyles((theme) => ({
   appBar: {
