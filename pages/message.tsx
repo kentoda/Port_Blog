@@ -101,8 +101,7 @@ const Message = () => {
           <Header />
           <SubHead />
           <div className="contents">
-            <h2>※主のslackに送信されます</h2>
-            <h2>※送信専用です</h2>
+            <h2>※お問い合わせ（メッセージ）が送れます</h2>
             <h2>※ご自由に入力してください(個人情報は入力しないでください)</h2>
             <div className="box">
               <form onSubmit={handleSubmit(onSubmit)}>
