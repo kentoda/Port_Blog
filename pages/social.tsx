@@ -70,10 +70,10 @@ const Social = () => {
                 Instagram
               </h3>
               <a
-                href="https://www.instagram.com/odadadadaken/?hl=ja"
+                // href="https://www.instagram.com/odadadadaken/?hl=ja"
                 className="url"
               >
-                https://www.instagram.com/odadadadaken/?hl=ja
+                {/* https://www.instagram.com/odadadadaken/?hl=ja */}
               </a>
               <h3>
                 <FacebookIcon />
