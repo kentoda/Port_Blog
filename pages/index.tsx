@@ -64,7 +64,7 @@ const home = () => {
                 in English.I'm sorry if I'm wrong!lol
               </p>
               <h4>ー History</h4>
-              <p>I'm a fledgling engineer.I’m currently working in Tokyo.</p>
+              <p>I'm a web engineer engineer.I’m currently working in Tokyo.</p>
               <p>I used to work in the welfare industry.</p>
               <p>
                 I'm a little worried about a whole new challenge.But that's my
