@@ -66,10 +66,6 @@ const home = () => {
               <h4>ー History</h4>
               <p>I'm a web engineer engineer.I’m currently working in Tokyo.</p>
               <p>I used to work in the welfare industry.</p>
-              <p>
-                I'm a little worried about a whole new challenge.But that's my
-                purpose
-              </p>
               <strong>I always want to be a challenger！！！</strong>
               <h4>ー Like</h4>
 
