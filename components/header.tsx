@@ -12,7 +12,7 @@ const Header = () => {
       <div className="profile">
         <Image
           className="img"
-          src="/F7C6EAEF-112C-4A92-9CCF-5BC82480F8A2_4_5005_c.jpeg"
+          src="/D1C21055-757E-4EED-9820-8E81147D6DA4_1_201_a.jpeg"
           width={100}
           height={100}
         />
